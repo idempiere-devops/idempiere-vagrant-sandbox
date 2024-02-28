@@ -123,8 +123,6 @@ sh RUN_SyncDB.sh
 cd $IDEMPIERE_HOME
 sh sign-database-build-alt.sh
 
-cp $IDEMPIERE_HOME/utils/unix/idempiere_Debian.sh /etc/init.d/idempiere
-
 # ADD IDEMPIERE USER
 
 if ! id idempiere > /dev/null 2>&1; then
@@ -148,6 +146,8 @@ fi
 chown -R idempiere:idempiere $IDEMPIERE_HOME
 
 # START IDEMPIERE SERVICE
+
+cp $IDEMPIERE_HOME/utils/unix/idempiere_Debian.sh /etc/init.d/idempiere
 
 systemctl daemon-reload
 systemctl enable idempiere

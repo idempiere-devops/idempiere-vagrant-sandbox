@@ -4,7 +4,7 @@ An example of how to provision iDempiere with vagrant.
 
 ## Common Commands
 
-Start virtual machines:
+Start iDempiere VM:
 
 ```shell
 vagrant up
@@ -19,22 +19,22 @@ vagrant halt
 Restart:
 
 ```shell
-vagrant reload idempiere
+vagrant reload
 ```
 
 Show ports:
 
 ```shell
-vagrant port idempiere
+vagrant port
 ```
 
 Open terminal:
 
 ```shell
-vagrant ssh idempiere
+vagrant ssh
 ```
 
-Destroy virtual machines:
+Destroy the VM:
 
 ```shell
 vagrant destroy
